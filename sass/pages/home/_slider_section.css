@@ -1,0 +1,26 @@
+.slider {
+  margin-top: 15rem;
+}
+
+.slider__content-con {
+  padding-top: 10rem;
+}
+
+.slider__content-con .h1 {
+  padding-bottom: 0px;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 500;
+  color: #212121;
+  line-height: 1.25;
+  border-radius: 0px;
+}
+
+.slider__content-con .h2 {
+  padding-bottom: 0px;
+  font-size: 17px;
+  font-weight: 300;
+  color: #141414;
+  line-height: 1.5;
+  border-radius: 0px;
+}
