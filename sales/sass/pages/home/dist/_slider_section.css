@@ -6,21 +6,31 @@
   padding-top: 10rem;
 }
 
-.slider__content-con .h1 {
-  padding-bottom: 0px;
-  font-family: Roboto;
+.slider__content-con .h1-con {
+  height: 75px;
+  top: 0px;
+  font-family: 'Roboto';
   font-size: 40px;
-  font-weight: 500;
   color: #212121;
-  line-height: 1.25;
+  line-height: 1.1;
   border-radius: 0px;
+  opacity: 1;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 
-.slider__content-con .h2 {
+.slider__content-con .def-con {
+  height: 64px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
   padding-bottom: 0px;
-  font-size: 17px;
+  font-family: Roboto;
+  font-size: 22px;
   font-weight: 300;
-  color: #141414;
-  line-height: 1.5;
+  color: #3d3d3d;
+  line-height: 1.4;
   border-radius: 0px;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 }

@@ -1,3 +1,37 @@
+/************* Vedios Appears Lists as specific category ***********/
+
+$('.web-btn33').click(function(){
+  $('.web2').fadeIn(200);
+  $('.mob2').fadeOut(200);
+  $('.desk2').fadeOut(200);
+});
+
+$('.mob-btn44').click(function(){
+  $('.mob2').fadeIn(200);
+  $('.web2').fadeOut(200);
+  $('.desk2').fadeOut(200);
+});
+
+$('.desk-btn55').click(function(){
+  $('.desk2').fadeIn(200);
+  $('.mob2').fadeOut(200);
+  $('.web2').fadeOut(200);
+});
+
+/*************** Vedio Category Drop Down *************/
+
+var c =1 ; 
+$('.cat-drop').mouseup(function(){
+  if(c == 1) {
+    $('.drop').fadeIn(300);
+    c=2 ; 
+  }
+  else if(c==2) {
+  $('.drop').fadeOut(300);
+    c=1;
+  }
+})
+
 /**********  Payment Box   ***********/
 
 $('.pay11').click(function(){

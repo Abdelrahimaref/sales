@@ -11,7 +11,7 @@
 	   
         <meta name="description"content="mt company">
         <title>4SOFT</title>
-        <link rel="shortcut icon" href="images/salles.jpg">
+        <link rel="shortcut icon" href="images/Sales Link png.png">
         <!--call bootstrap-->
 	    <link rel="stylesheet"href="css/bootstrap.css"/>
         <!--Page Style-->	   
@@ -20,8 +20,8 @@
        <link rel="stylesheet"href="css/animate.min.css"/>
        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>        
        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">       
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">        
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	   <!--Internet Explorer-->
 	    <script src="js/html5shiv.min.js"></script>
         <script src="js/respond.min.js"></script>
@@ -46,20 +46,41 @@
         <!--- Header Section-->
         <div class="Nav wow fadeInUp">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light nav-scroll  fixed-top  py-4 border-bottom mb-5 pl-5 pr-5">
-                    <img src="images/salles.jpg" style=" width: 120px ; height: 80px;"  >                        
+                <nav class="navbar navbar-expand-lg navbar-light nav-scroll  fixed-top  py-4 border-bottom mb-5 pl-5 pr-5 bg-white">
+                    <img src="images/Sales Link png.png" style=" width: 120px ; height: 80px;"  >                        
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto"></ul>
-                        <ul class="navbar-nav ml-auto">                            
-                            <a href="#" class="btn  btn-lg pt-4 get-link2 mr-4 btn-primary" style="width: 130px; height: 48px;"> 
-                                Log In
-                            </a>
-                            <a href="#" class="btn  btn-lg pt-4 get-link2 border border-primary text-primary" style="width: 130px; height: 48px;"> 
-                                Log Out
-                            </a>
+                        <ul class="navbar-nav ml-auto">   
+                            <li class="nav-item  active pr-5">
+                                <a class="nav-link text-primary" href="index.html">Home </span></a>
+                            </li>
+                            <li class="nav-item  active pr-5">
+                                <a class="nav-link text-primary" href="#payment"> Payment </span></a>
+                            </li>
+                            <li class="nav-item  active pr-5">
+                                <a class="nav-link" href="#related">Related Projects</a>
+                            </li>
+
+                            <li class="nav-item  active pr-5">
+                                <a class="nav-link" href="#questions">Common Questions</a>
+                            </li> 
+                               
+                            <div class="d-flex justify-content-center">
+                                <li>
+                                    <a href="#" class="btn  btn-lg pt-4 get-link2 mr-4 btn-primary" style="width: 130px; height: 48px;"> 
+                                        Log In
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn  btn-lg pt-4 get-link2 border border-primary text-primary" style="width: 130px; height: 48px;"> 
+                                        Log Out
+                                    </a>
+                                </li>
+                            </div>
+
                                                
                         </ul>
                     </div>
@@ -68,7 +89,7 @@
         </div>
 
         <!---------- Slider Section ---------->
-        <div class="slider">
+        <div class="slider" id="payment">
             <div class="slider__content">
                 <div class="container">
                     <div class="row">
@@ -187,9 +208,9 @@
 
         <!--------------  Courses Section -------------->
 
-        <div class="courses">
+        <div class="courses" id="related">
             <div class="title">
-                <h1>Related courses</h1>
+                <h1>Related Projects</h1>
             </div>
            
             <div class="search-section">
@@ -199,7 +220,7 @@
                         <div class="row">
 
                             <div class="col-lg-4 col-md-6 course blogBox2">
-                                <a href="course-content.html">
+                                <a href="course-payment.html">
                                     <div class="w-100">
                                         <img src="images/course1.png" class="w-100"  alt="">
                                         <div class="card w-100 pb-4">
@@ -223,7 +244,7 @@
                             </div>
 
                             <div class="col-lg-4 col-md-6 course blogBox2 moreBox2">
-                                <a href="course-content.html">
+                                <a href="course-payment.html">
                                     <div class="w-100">
                                         <img src="images/course1.png" class="w-100"  alt="">
                                         <div class="card w-100 pb-4">
@@ -247,7 +268,7 @@
                             </div>
 
                             <div class="col-lg-4 col-md-6 course blogBox2 moreBox2">
-                                <a href="course-content.html">
+                                <a href="course-payment.html">
                                     <div class="w-100">
                                         <img src="images/course1.png" class="w-100"  alt="">
                                         <div class="card w-100 pb-4">
@@ -271,7 +292,7 @@
                             </div>
 
                             <div class="col-lg-4 col-md-6 course blogBox2 moreBox2" style="display: none;">
-                                <a href="course-content.html">
+                                <a href="course-payment.html">
                                     <div class="w-100">
                                         <img src="images/course1.png" class="w-100"  alt="">
                                         <div class="card w-100 pb-4">
@@ -295,7 +316,7 @@
                             </div>
 
                             <div class="col-lg-4 col-md-6 course blogBox2 moreBox2" style="display: none;">
-                                <a href="course-content.html">
+                                <a href="course-payment.html">
                                     <div class="w-100">
                                         <img src="images/course1.png" class="w-100"  alt="">
                                         <div class="card w-100 pb-4">
@@ -320,7 +341,7 @@
 
                             
                             <div class="col-lg-4 col-md-6 course blogBox2 moreBox2" style="display: none;">
-                                <a href="course-content.html">
+                                <a href="course-payment.html">
                                     <div class="w-100">
                                         <img src="images/course1.png" class="w-100"  alt="">
                                         <div class="card w-100 pb-4">
@@ -343,7 +364,7 @@
                                 </a>
                             </div>
                             <div class="col-lg-4 col-md-6 course blogBox2 moreBox2" style="display: none;">
-                                <a href="course-content.html">
+                                <a href="course-payment.html">
                                     <div class="w-100">
                                         <img src="images/course1.png" class="w-100"  alt="">
                                         <div class="card w-100 pb-4">
@@ -366,7 +387,7 @@
                                 </a>
                             </div>
                             <div class="col-lg-4 col-md-6 course blogBox2 moreBox2" style="display: none;">
-                                <a href="course-content.html">
+                                <a href="course-payment.html">
                                     <div class="w-100">
                                         <img src="images/course1.png" class="w-100"  alt="">
                                         <div class="card w-100 pb-4">
@@ -389,7 +410,7 @@
                                 </a>
                             </div>
                             <div class="col-lg-4 col-md-6 course blogBox2 moreBox2" style="display: none;">
-                                <a href="course-content.html">
+                                <a href="course-payment.html">
                                     <div class="w-100">
                                         <img src="images/course1.png" class="w-100"  alt="">
                                         <div class="card w-100 pb-4">
@@ -428,7 +449,7 @@
 
 
         <!----------- Ask Question Section No Css Required In This Section (All Css Classes From Bootstrap4) ----------->
-        <section class="mt-5 pt-5 pb-5 mb-5">
+        <section class="mt-5 pt-5 pb-5 mb-5" id="questions">
             <div class="title">
                 <h1>Frequently Asked Questions</h1>
             </div>
@@ -595,6 +616,68 @@
                 </div>
             </div>
         </section>
+
+        <!--- Footer --->
+
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="footer__title">Links</div>
+                        <ul class="unstyled-list">
+                            <li> <a href="index.html">Home</a></li>
+                            <li> <a href="#about">About</a></li>
+                            <li> <a href="#projects">Projects</a></li>
+                            <li> <a href="#vedios">Vedios</a> </li>
+                            <li> <a href="#questions">Questions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer__title">Contact us</div>
+                        <ul class="unstyled-list">
+                            <li><i class="fas fa-phone mr-3 text-primary"></i>  (+02) 01033293899 </li>
+                            <li><i class="fas fa-mail-bulk mr-3 text-primary"></i> 4soft@gmail.com </li>
+                            <li> <i class="fas fa-map-marker-alt mr-3 text-primary"></i>  Menia - dmaris - Abeag elry </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="footer__title">Follow Us</div>
+                        <ul class="unstyled-list third">
+                            <li style="display: inline-block;" class="face"> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li style="display: inline-block;" class="twi"><a href="#"><i class="fab fa-twitter-square"></i></a></li> <br>
+                            <li style="display: inline-block;" class="goog"> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li style="display: inline-block;" class="insta"> <a href="#"> <i class="fab fa-instagram"></i> </a> </li><br>
+                            <li style="display: inline-block;" class="linked"> <a href="#"> <i class="fab fa-linkedin-in"></i> </a></li> 
+                            <li style="display: inline-block;" class="youtu"> <a href="#"> <i class="fab fa-youtube"></i> </a></li> <br>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="footer__title">4SOFT ON</div>
+                        <div class="d-flex justify-content-center">
+                            <ul class="unstyled-list third ">
+                                <li class="whats"> <a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                <li class="slack"></li>
+                                <li class="telegram"> <a href="#"><i class="fab fa-telegram"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2 pt-3">
+                        <div class="text-center">
+                            <img src="images/Sales Link png.png" style="width: 150px;" alt="">
+                            <div>
+                                © 2020 4SOFT. <br>
+                                All rights reserved.
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
 
 
         <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
