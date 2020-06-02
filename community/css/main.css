@@ -372,14 +372,14 @@ h4 {
 
   .h1-con {
     font-size: 25px !important;
-    margin-top: 14rem !important;
+    margin-top: 20rem !important;
     margin-bottom: 10rem;
     height: 0px !important;
   }
 
   .def-con {
     font-size: 18px !important;
-    margin-top: 7rem !important;
+    margin-top: 12rem !important;
   }
 }
 @media (max-width: 992px) {
