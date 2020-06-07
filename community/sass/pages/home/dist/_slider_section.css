@@ -1,5 +1,5 @@
 .slider {
-  margin-top: 15rem;
+  padding-top: 15rem;
 }
 
 .slider__content-con {
@@ -8,14 +8,16 @@
 
 .slider__content-con .h1-con {
   top: 0px;
-  font-family: 'Roboto';
+  overflow: visible;
+  padding-bottom: 0px;
+  font-family: Roboto;
   font-size: 40px;
   color: #212121;
-  line-height: 1.1;
+  line-height: 1.4;
   border-radius: 0px;
-  opacity: 1;
   margin-top: 1rem;
   margin-bottom: 4rem;
+  font-weight: 400;
 }
 
 .slider__content-con .def-con {

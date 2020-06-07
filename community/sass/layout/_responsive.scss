@@ -47,6 +47,12 @@
         font-size: 18px !important;
         margin-top: 12rem !important;
     }
+    .main-card {
+        margin-right: 0px !important;
+    }
+    .contact-content__title , .contact-footer__main  {
+        font-size: 20px !important;
+    }
 
 }
 @media(max-width:992px) {
@@ -90,6 +96,9 @@
 
         font-size: 18px !important;
         margin-top: 7rem !important;
+    }
+    .best-project {
+        margin-top: 50rem !important;
     }
 
 }
@@ -140,6 +149,15 @@
     }
     .slid-btn {
         text-align: center;
+    }
+    .contact-input {
+        width: 300px !important;
+    }
+    .textarea-contact,.submit-contact-btn {
+        width: 300px !important;
+    }
+    .x-600 {
+        height: 600px !important;
     }
 
 }

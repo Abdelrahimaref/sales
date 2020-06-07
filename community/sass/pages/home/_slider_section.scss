@@ -1,20 +1,21 @@
 .slider {
-    margin-top: 15rem;
-
+    padding-top: 15rem;
     &__content{
         &-con {
             padding-top: 10rem;
 
             .h1-con {
                 top: 0px;
-                font-family: 'Roboto';
+                overflow: visible;
+                padding-bottom: 0px;
+                font-family: Roboto;
                 font-size: 40px;
                 color: rgb(33, 33, 33);
-                line-height: 1.1;
+                line-height: 1.4;
                 border-radius: 0px;
-                opacity: 1;
                 margin-top: 1rem;
                 margin-bottom: 4rem;
+                font-weight: 400;
             }
             .def-con {
                 overflow: visible;

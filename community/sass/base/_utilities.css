@@ -142,3 +142,7 @@ h4 {
   line-height: 1.33;
   border-radius: 0px;
 }
+
+.active-color {
+  color: #40aacf !important;
+}
