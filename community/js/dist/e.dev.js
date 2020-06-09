@@ -1,6 +1,24 @@
 "use strict";
 
+/********* Contact Page ( Agile Modal ) **********/
+$('.box-agile-1').click(function () {
+  setTimeout(function () {
+    $('.box-agile-2').removeClass('card-color-active').addClass('card-color-not-active');
+  }, 100);
+  setTimeout(function () {
+    $('.box-agile-1').addClass('card-color-active').removeClass('card-color-not-active');
+  }, 100);
+});
+$('.box-agile-2').click(function () {
+  setTimeout(function () {
+    $('.box-agile-2').addClass('card-color-active').removeClass('card-color-not-active');
+  }, 100);
+  setTimeout(function () {
+    $('.box-agile-1').removeClass('card-color-active').addClass('card-color-not-active');
+  }, 100);
+});
 /********** Desktop page  ********/
+
 var favorite = [],
     i = 0,
     count = 0,
