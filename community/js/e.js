@@ -1,3 +1,20 @@
+/********** Desktop page  ********/
+var favorite = [] , i = 0 , count = 0 , x;
+/********** Desktop page  ********/
+$('.radio-dsktop').click(function(){
+  if($(this).prop("checked") == true) {
+    favorite.push($(this).val());
+    $(".card--li").append('<li>' + favorite[i] +'</li>');
+    i++ ;
+  }
+  else if($(this).prop("checked") == false) {
+    
+  }
+
+
+});
+
+console.log(favorite);
 /********** technology page  *******/
 $('.data-btn').click(function(){
   setTimeout(function(){
@@ -50,78 +67,110 @@ $('.workflow-btn').click(function(){
 /********** QUESTION PAGE  *******/
 var que = 1 ; 
 $('.question-box').click(function(){
+  var pp = $(this)
   if(que==1) {
-    $(this).addClass('card');
-    $(this).children('.answer').fadeIn();
+    setTimeout(function(){
+      pp.addClass('card');
+      pp.children('.answer').fadeIn(300);
+    },300)
+
     que=2 ; 
   }
   else if(que==2) {
-    $(this).removeClass('card');
-    $(this).children('.answer').fadeOut();
+    setTimeout(function(){
+      pp.removeClass('card');
+      pp.children('.answer').fadeOut(300);
+    },300)
     que=1 ; 
   }
 
 });
       /****  Questions Type  ****/
 $('.category-question').click(function(){
-  $('.category-questions').fadeIn();
-  $('.start-questions').fadeOut();
-  $('.native-questions').fadeOut();
-  $('.pricing-questions').fadeOut();
-  $('.support-questions').fadeOut();
-  $(this).addClass('active-color');
-  $('.start-question').removeClass('active-color');
-  $('.native-question').removeClass('active-color');
-  $('.pricing-question').removeClass('active-color');
-  $('.support-question').removeClass('active-color');
+  setTimeout(function(){
+    $('.start-questions').fadeOut(300);
+    $('.native-questions').fadeOut(300);
+    $('.pricing-questions').fadeOut(300);
+    $('.support-questions').fadeOut(300);
+    $('.category-question').addClass('active-color');
+    $('.start-question').removeClass('active-color');
+    $('.native-question').removeClass('active-color');
+    $('.pricing-question').removeClass('active-color');
+    $('.support-question').removeClass('active-color');
+  },400)
+
+  setTimeout(function(){
+    $('.category-questions').fadeIn(800);
+  },700)
 })
 $('.start-question').click(function(){
-  $('.start-questions').fadeIn();
-  $('.category-questions').fadeOut();
-  $('.native-questions').fadeOut();
-  $('.pricing-questions').fadeOut();
-  $('.support-questions').fadeOut();
-  $(this).addClass('active-color');
-  $('.category-question').removeClass('active-color');
-  $('.native-question').removeClass('active-color');
-  $('.pricing-question').removeClass('active-color');
-  $('.support-question').removeClass('active-color');
+  setTimeout(function(){
+    $('.category-questions').fadeOut(300);
+    $('.native-questions').fadeOut(300);
+    $('.pricing-questions').fadeOut(300);
+    $('.support-questions').fadeOut(300);
+    $('.start-question').addClass('active-color');
+    $('.category-question').removeClass('active-color');
+    $('.native-question').removeClass('active-color');
+    $('.pricing-question').removeClass('active-color');
+    $('.support-question').removeClass('active-color');
+  },400)
+
+  setTimeout(function(){
+    $('.start-questions').fadeIn(800);
+  },700)
 })
 $('.native-question').click(function(){
-  $('.native-questions').fadeIn();
-  $('.category-questions').fadeOut();
-  $('.start-questions').fadeOut();
-  $('.pricing-questions').fadeOut();
-  $('.support-questions').fadeOut();
-  $(this).addClass('active-color');
-  $('.start-question').removeClass('active-color');
-  $('.category-question').removeClass('active-color');
-  $('.pricing-question').removeClass('active-color');
-  $('.support-question').removeClass('active-color');
+  setTimeout(() => {
+    $('.category-questions').fadeOut(300);
+    $('.start-questions').fadeOut(300);
+    $('.pricing-questions').fadeOut(300);
+    $('.support-questions').fadeOut(300);
+    $('.native-question').addClass('active-color');
+    $('.start-question').removeClass('active-color');
+    $('.category-question').removeClass('active-color');
+    $('.pricing-question').removeClass('active-color');
+    $('.support-question').removeClass('active-color');
+  }, 400);
+  setTimeout(() => {
+    $('.native-questions').fadeIn(800);
+  }, 400);
 })
 $('.pricing-question').click(function(){
-  $('.pricing-questions').fadeIn();
-  $('.category-questions').fadeOut();
-  $('.start-questions').fadeOut();
-  $('.native-questions').fadeOut();
-  $('.support-questions').fadeOut();
-  $(this).addClass('active-color');
-  $('.start-question').removeClass('active-color');
-  $('.native-question').removeClass('active-color');
-  $('.category-question').removeClass('active-color');
-  $('.support-question').removeClass('active-color');
+  setTimeout(() => {
+    $('.category-questions').fadeOut(300);
+    $('.start-questions').fadeOut(300);
+    $('.native-questions').fadeOut(300);
+    $('.support-questions').fadeOut(300);
+    $('.pricing-question').addClass('active-color');
+    $('.start-question').removeClass('active-color');
+    $('.native-question').removeClass('active-color');
+    $('.category-question').removeClass('active-color');
+    $('.support-question').removeClass('active-color');
+  }, 400);
+
+
+  setTimeout(() => {
+    $('.pricing-questions').fadeIn(800);
+  }, 700);
+
 })
 $('.support-question').click(function(){
-  $('.support-questions').fadeIn();
-  $('.start-questions').fadeOut();
-  $('.native-questions').fadeOut();
-  $('.pricing-questions').fadeOut();
-  $('.category-questions').fadeOut();
-  $(this).addClass('active-color');
-  $('.start-question').removeClass('active-color');
-  $('.native-question').removeClass('active-color');
-  $('.pricing-question').removeClass('active-color');
-  $('.category-question').removeClass('active-color');
+  setTimeout(() => {
+    $('.start-questions').fadeOut(300);
+    $('.native-questions').fadeOut(300);
+    $('.pricing-questions').fadeOut(300);
+    $('.category-questions').fadeOut(300);
+    $('.support-question').addClass('active-color');
+    $('.start-question').removeClass('active-color');
+    $('.native-question').removeClass('active-color');
+    $('.pricing-question').removeClass('active-color');
+    $('.category-question').removeClass('active-color');
+  }, 400);  
+  setTimeout(() => {
+    $('.support-questions').fadeIn(800);
+  }, 700);
+
 })
 
 
@@ -130,30 +179,48 @@ $('.support-question').click(function(){
 
 /*********** team card in about page *********/
 var f = 1 ; 
-$('.post-all').hover(function(){
+$('.post-all').click(function(){
+  var pos = $(this);
   if(f==1) {
-    $(this).children().children('.post-image-box').children('img').css({width:'80px',height:'80px'})
-    $(this).children().children('.all-con').fadeOut();
-    $(this).children().children('.post-subname2').fadeIn();
-    $(this).css({backgroundColor:'#f5f9fa'});
+    setTimeout(() => {
+      pos.children().children('.all-con').fadeOut(100);
+    }, 100);
+    setTimeout(() => {
+      pos.children().children('.post-image-box').children('img').css({width:'80px',height:'80px'})
+      pos.css({backgroundColor:'#f5f9fa'});
+      pos.children().children('.post-subname2').fadeIn(300);
+    }, 100);
     f=2 ; 
   }
   else if(f==2) {
-    $(this).children().children('.post-image-box').children('img').css({width:'180px',height:'180px'})
-    $(this).children().children('.all-con').fadeIn();
-    $(this).children().children('.post-subname2').fadeOut();
-    $(this).css({backgroundColor:'#FFF'});
+    setTimeout(() => {
+      $(this).children().children('.post-subname2').fadeOut(100);
+    }, 100);
+    setTimeout(() => {
+      $(this).children().children('.post-image-box').children('img').css({width:'180px',height:'180px'})
+      $(this).css({backgroundColor:'#FFF'});
+      $(this).children().children('.all-con').fadeIn(300);
+    }, 200);
     f=1;
   }
 });
 
 $('.team-btn-1').click(function(){
-  $('.team-1').fadeIn();
-  $('.team-2').css({display:'none'})
+  setTimeout(() => {
+    $('.team-2').fadeOut(300);
+  }, 400);
+  setTimeout(() => {
+    $('.team-1').fadeIn(800);
+  }, 700);
+
 });
 $('.team-btn-2').click(function(){
-  $('.team-2').css({display:'block'})
-  $('.team-1').fadeOut();
+  setTimeout(() => {
+    $('.team-1').fadeOut(300);
+  }, 400);
+  setTimeout(() => {
+    $('.team-2').fadeIn(800);
+  }, 700);
 })
 
 
@@ -247,31 +314,56 @@ $("#loadMore3").on('click', function (e) {
 /*************** Courses **************/
 
 $('.web-btn').click(function(){
-  $('.web').fadeIn();
-  $('.mobile').fadeOut();
-  $('.desktop').fadeOut();
+  setTimeout(() => {
+    $('.mobile').fadeOut(300);
+    $('.desktop').fadeOut(300);
+  }, 400);
+  setTimeout(() => {
+    $('.web').fadeIn(800);
+  }, 700);
+
 })
 $('.mob-btn').click(function(){
-  $('.mobile').fadeIn();
-  $('.web').fadeOut();
-  $('.desktop').fadeOut();
+  setTimeout(() => {
+    $('.web').fadeOut(300);
+    $('.desktop').fadeOut(300);
+  }, 400);
+  setTimeout(() => {
+    $('.mobile').fadeIn(800);
+  }, 700);
 })
 $('.desk-btn').click(function(){
-  $('.desktop').fadeIn();
-  $('.mobile').fadeOut();
-  $('.wen').fadeOut();
+  setTimeout(() => {
+    $('.mobile').fadeOut(300);
+    $('.wen').fadeOut(300);  
+  }, 400);
+  setTimeout(() => {
+    $('.desktop').fadeIn(800);
+  }, 700);
+
 })
 
 
 $('.plus-appear').click(function(){
-  $(this).parent().parent().children('ul').fadeIn();
-    $('.plus-appear').fadeOut();
-    $('.minus-dis').fadeIn();
+  var plus = $(this);
+  setTimeout(() => {
+    $('.plus-appear').fadeOut(300);
+  }, 400);
+  setTimeout(() => {
+    plus.parent().parent().children('ul').fadeIn(800);
+    $('.minus-dis').fadeIn(800);
+  }, 700);
+
 });
 $('.minus-dis').click(function(){
-  $(this).parent().parent().children('ul').fadeOut(300);
-  $('.minus-dis').fadeOut()
-  $('.plus-appear').fadeIn();
+  var minus = $(this) ; 
+  setTimeout(() => {
+    $(this).parent().parent().children('ul').fadeOut(300);
+    $('.minus-dis').fadeOut(300)
+  }, 400);
+  setTimeout(() => {
+    $('.plus-appear').fadeIn(800);
+  }, 700);
 });
 
 
@@ -454,6 +546,4 @@ fileBtn.addEventListener("change",function() {
   } else {
     customTxt2.innerHTML = "No File Chosen yet !";
   }
-})
-
-
+});

@@ -1974,7 +1974,7 @@ button, html [type=button], [type=reset], [type=submit] {
 }
 
 .ask-card {
-  height: 370px;
+  min-height: 370px;
   width: 318px;
   background-color: #f5f9fa;
   border-radius: 0px;
@@ -2103,6 +2103,10 @@ button, html [type=button], [type=reset], [type=submit] {
   font-weight: 600;
   color: #00527f;
   border-radius: 120px;
+}
+
+.destop {
+  margin-top: 10rem;
 }
 
 /*# sourceMappingURL=main.css.map */

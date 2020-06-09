@@ -5,7 +5,7 @@
 }
 
 .ask-card {
-  height: 370px;
+  min-height: 370px;
   width: 318px;
   background-color: #f5f9fa;
   border-radius: 0px;

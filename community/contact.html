@@ -168,7 +168,7 @@
                                     </ul>
                                 </div>
                                 <div class="text-center btn-box-choose">
-                                    <button class="btn-choose" data-toggle="modal" data-target="#agileModal"> CHOOSE ME </button>
+                                    <button class="btn-choose" data-toggle="modal" data-target="#agileModal" data-controls-modal="#agileModal" data-backdrop="static" data-keyboard="false"> CHOOSE ME </button>
                                 </div>
                             </div>
                         </div>
@@ -246,27 +246,27 @@
                                 <form action="" class="form-group">
                                     <div class="row">
                                         <div class="col-md-6 d-flex justify-content-end">
-                                            <input type="text" placeholder="First Name" class="form-control modal-input" style="width: 190px;">
+                                            <input type="text" placeholder="First Name" class="form-control modal-input" style="width: 190px;" required>
                                         </div>
                                         <div class="col-md-6 d-flex justify-content-start">
-                                            <input type="text" placeholder="Last Name" class="form-control modal-input " style="width: 190px;">
+                                            <input type="text" placeholder="Last Name" class="form-control modal-input " style="width: 190px;" required>
                                         </div>
                                         <div class="col-md-12 d-flex justify-content-center">
-                                            <input type="email" placeholder="Your Email" class="form-control modal-input" style="width: 400px;">
+                                            <input type="email" placeholder="Your Email" class="form-control modal-input" style="width: 400px;" required>
                                         </div>
                                         <div class="col-md-12 d-flex justify-content-center">
                                             <textarea name="" id="" class="form-control textarea-modal"placeholder="Please provide some details about your project like:          - is it a web application or a mobile app?                                   - describe the user flow and functionality    - describe the user flow and functionality- do you require integration with payment providers or  other external APIs- do you know of any reference app or web-site similar to what you would like to build"></textarea>
                                         </div>
                                         <div class="col-lg-12 d-flex justify-content-center form-group mt-5">
                                             <div class="gallery-service">
-                                                <button class="btn btn-success mb-4 bg-transparent btn-photo btn-up-modal" id="src-btn2">click to upload a file</button>
+                                                <button class="btn btn-success mb-4 bg-transparent btn-photo btn-up-modal" id="src-btn2" >click to upload a file</button>
                                                 <input type="file" name="" id="file-btn2" hidden="hidden">
                                                 <span id="customTxt2"></span>
                                             </div>
                                         </div>
                                         <div class="form-group  pl-5  text-center">
                                             <div class="">
-                                              <input class="mr-2" type="checkbox" id="inp-box3" >
+                                              <input class="mr-2" type="checkbox" id="inp-box3" required >
                                               <label class="" for="inp-box3">Sign up to receive occasional tips about building apps without code</label>
                                             </div>
                                         </div>
@@ -282,6 +282,28 @@
                 </div>
             </div>
         </div>
+
+            <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Confirmation</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to save changes you made to document before closing?</p>
+                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 
 
         <footer class="contact-footer">
