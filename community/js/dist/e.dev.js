@@ -19,20 +19,24 @@ $('.box-agile-2').click(function () {
 });
 /********** Desktop page  ********/
 
-var favorite = [],
-    i = 0,
-    count = 0,
-    x;
-/********** Desktop page  ********/
-
+var iNum = 0;
+var xPrice = 0;
 $('.radio-dsktop').click(function () {
   if ($(this).prop("checked") == true) {
-    favorite.push($(this).val());
-    $(".card--li").append('<li>' + favorite[i] + '</li>');
-    i++;
-  } else if ($(this).prop("checked") == false) {}
+    iNum = iNum + 1;
+    $('.num--box').text(iNum);
+    $(".box--p").before('<div class=" ' + $(this).val() + ' d-flex justify-content-between mt-3">' + '<img class=" ' + $(this).val() + '" style="width:25px" src =\"images/desktop/' + $(this).val() + '.png' + '">' + '<li class=' + $(this).val() + '>' + $(this).val() + '</li>' + '</div>');
+    xPrice = parseInt(xPrice) + parseInt($(this).parent().parent().attr('value'));
+    $('.box--price').text(xPrice);
+  } else if ($(this).prop("checked") == false) {
+    iNum = iNum - 1;
+    $('.num--box').text(iNum);
+    var ele = $(this).val();
+    $('.' + ele).remove();
+    xPrice = parseInt(xPrice) - parseInt($(this).parent().parent().attr('value'));
+    $('.box--price').text(xPrice);
+  }
 });
-console.log(favorite);
 /********** technology page  *******/
 
 $('.data-btn').click(function () {
@@ -187,7 +191,7 @@ $('.support-question').click(function () {
 /*********** team card in about page *********/
 
 var f = 1;
-$('.post-all').click(function () {
+$('.post-all').hover(function () {
   var _this = this;
 
   var pos = $(this);

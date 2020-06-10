@@ -8,7 +8,6 @@ $('.box-agile-1').click(function(){
     $('.box-agile-1').addClass('card-color-active').removeClass('card-color-not-active');
   }, 100);
 })
-
 $('.box-agile-2').click(function(){
   setTimeout(() => {
     $('.box-agile-2').addClass('card-color-active').removeClass('card-color-not-active');
@@ -17,23 +16,29 @@ $('.box-agile-2').click(function(){
     $('.box-agile-1').removeClass('card-color-active').addClass('card-color-not-active');
   }, 100);
 })
+
+
 /********** Desktop page  ********/
-var favorite = [] , i = 0 , count = 0 , x;
-/********** Desktop page  ********/
+var iNum = 0 ; 
+var xPrice = 0 ; 
 $('.radio-dsktop').click(function(){
   if($(this).prop("checked") == true) {
-    favorite.push($(this).val());
-    $(".card--li").append('<li>' + favorite[i] +'</li>');
-    i++ ;
+    iNum = iNum + 1 ;
+    $('.num--box').text(iNum);
+    $(".box--p").before('<div class=" '+$(this).val()+' d-flex justify-content-between mt-3">' + '<img class=" ' + $(this).val()+'" style="width:25px" src =\"images/desktop/'+$(this).val()+'.png'+'">' + '<li class=' + $(this).val() +'>' + $(this).val()  +'</li>' + '</div>');
+    xPrice = parseInt(xPrice) + parseInt($(this).parent().parent().attr('value'));
+    $('.box--price').text(xPrice);
   }
   else if($(this).prop("checked") == false) {
-    
+    iNum = iNum - 1;
+    $('.num--box').text(iNum);
+    var ele = $(this).val();
+    $('.'+ele).remove(); 
+    xPrice = parseInt(xPrice) - parseInt($(this).parent().parent().attr('value'));
+    $('.box--price').text(xPrice);
   }
-
-
 });
 
-console.log(favorite);
 /********** technology page  *******/
 $('.data-btn').click(function(){
   setTimeout(function(){
@@ -45,7 +50,6 @@ $('.data-btn').click(function(){
     $('.data-btn img').attr("src" , "images/white-1.svg");
     $('.design-btn img').attr("src" , "images/light-2.svg");    
     $('.workflow-btn img').attr("src" , "images/light-3.svg");
-
   },400)
   setTimeout(function(){
     $('.for-data').fadeIn(800);
@@ -198,7 +202,7 @@ $('.support-question').click(function(){
 
 /*********** team card in about page *********/
 var f = 1 ; 
-$('.post-all').click(function(){
+$('.post-all').hover(function(){
   var pos = $(this);
   if(f==1) {
     setTimeout(() => {
@@ -549,13 +553,9 @@ $(document).ready(function(){
   });
 });
 
-
 var srcBtn = document.getElementById('src-btn2');
 var fileBtn = document.getElementById('file-btn2');
 var customTxt2 = document.getElementById('customTxt2');
-
-
-
 srcBtn.addEventListener("click",function() {
   fileBtn.click();
 });
